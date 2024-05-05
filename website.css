@@ -1,0 +1,134 @@
+@import url('https://fonts.google.com/specimen/Pacifico?query=pacifico');
+
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.3) url('mainbg.png');
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+nav{
+    box-sizing: border-box;
+    border: 2px solid rgb(243, 172, 39);
+    background-color: rgb(29, 31, 25);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+nav h2{
+    margin-left: 11px;
+    cursor: pointer;
+    color: #000;
+}
+
+nav h2 span{
+    font-style: italic;
+    color: rgb(243, 172, 39);
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 4px;
+}
+
+nav ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(243, 172, 39);
+    transition: 2s;
+
+}
+
+nav ul li a:hover{
+    box-shadow: 0 5px 20px rgb(243, 172, 39) inset, 0 5px 20px rgb(243, 172, 39) inset,
+    0 5px 20px rgb(243, 172, 39) inset,0 5px 20px rgb(243, 172, 39) inset;
+}
+
+nav .btn{
+    color: #000;
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: rgb(243, 172, 39)   
+}
+
+.content{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Pacifico';
+}
+
+.content p{
+    font-size: 25px;
+    font-family: 'Pacifico';
+    color: rgb(243, 172, 39);
+    align-items: center;
+}
+
+.play{
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 31%;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.play a{
+    text-decoration: none;
+    color: rgb(17, 13, 13);
+    background-color: rgb(243, 172, 39);
+    padding: 10px;
+    border: 2px solid #000;
+    align-items: center;
+}
+
+.card img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.card:hover{
+    background-color: rgb(243, 172, 39);
+    filter: grayscale(0);
+}
+
+.card:hover.card img{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.4);
+}
+
+
+h1{
+    color: rgb(243, 172, 39);
+    align-items: center;
+}
+
+.footer{  
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    width: 95%; 
+    color: white;  
+    text-align: right;  
+    }  

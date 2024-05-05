@@ -1,0 +1,10 @@
+.div{
+    float: left;
+    width: 300px;
+    }
+
+.parent{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     column-gap: 5px;
+     }

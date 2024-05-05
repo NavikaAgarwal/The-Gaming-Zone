@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    
+</head>
+<body>
+
+    <style>
+@import url('https://fonts.google.com/specimen/Pacifico?query=pacifico');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.3) url('mainbg.png');
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+nav{
+    box-sizing: border-box;
+    border: 2px solid rgb(236, 215, 25);
+    background-color: rgb(29, 31, 25);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+nav h2{
+    margin-left: 11px;
+    cursor: pointer;
+    color: #000;
+}
+
+nav h2 span{
+    font-style: italic;
+    color: rgb(236, 215, 25);
+}
+
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 4px;
+}
+
+nav ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(236, 215, 25);
+    transition: 2s;
+
+}
+
+nav ul li a:hover{
+    box-shadow: 0 5px 20px rgb(236, 215, 25) inset, 0 5px 20px rgb(236, 215, 25) inset,
+    0 5px 20px rgb(236, 215, 25) inset,0 5px 20px rgb(236, 215, 25) inset;
+}
+
+nav .btn{
+    color: #000;
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: rgb(236, 215, 25)   
+}
+
+.content{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Pacifico';
+    text-align: center;
+}
+
+.content p{
+    font-size: 25px;
+    font-family: 'Pacifico';
+    color: rgb(236, 215, 25);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;  
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 300px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+.logo p{
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.logo .fas{
+    font-size: 50px;
+}
+ul.navbar{
+    display: flex;
+    list-style: none;
+}
+ul.navbar li{
+    width: 120px;
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+ul.navbar li a.active{
+    color: #FEC53A;
+}
+ul.navbar li a:hover:not(.active){
+    color: #FEC53A;
+}
+#btn{
+    width: 250px;
+    height: 10vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+}
+#btn .fas{
+    margin-right: 10px;
+}
+
+.play{
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 31%;
+    font-size: 25px;
+    display: inline-block;
+    text-align: center;    
+    padding-top: 100px;
+}
+
+.play a{
+    text-decoration: none;
+    color: rgb(17, 13, 13);
+    background-color: rgb(236, 215, 25);
+    padding: 10px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+.card img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.card:hover{
+    background-color: rgb(236, 215, 25);
+    filter: grayscale(0);
+}
+
+.card:hover.card img{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.4);
+}
+
+
+h1{
+    color: rgb(236, 215, 25);
+    text-align: center;
+    padding-top: 10px;
+}
+#btn2{
+    width: 150px;
+    height: 10vh;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    background: #FEC53A;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    
+    border-radius: 20px;
+    text-align: left;
+}
+
+.footer{  
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    width: 95%; 
+    color: white;  
+    text-align: right;  
+    }  
+    </style>
+    <!-- <nav>
+        <h2><span>GAMING <br> ZONE</span></h2>
+        <ul>
+            <li><a href="index9.html">HOME</a></li>
+            <li><a href="index5.html">ABOUT</a></li>
+            <li><a href="index7.html">CONTACT</a></li>
+        </ul>
+        <a class="btn" href="index6.html">EXPLORE GAMES</a>
+    </nav> -->
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>GAMING ZONE</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="index9.html" class="active">HOME</a></li>
+                <li><a href="index5.html">ABOUT</a></li>
+                <li><a href="index7.html">CONTACT</a></li>
+                <li><a href="index12.html">LOGIN</a></li>
+                <li><a href="index12.html">SIGNUP</a></li>
+                <li><a href="index6.html">EXPLORE</a></li>
+            </ul>
+
+            <button type="button" id="btn"><i class="fas fa-play"></i></button>
+        </header>
+        <!-- CONTENT -->
+        <h1>Welcome to The Gaming Zone</h1>
+        <h1>Play Latest Games only on GAMING ZONE</h1>
+       <!-- <div class="play">
+        <a href="index8.html">Play Now</a>
+    </div> -->
+    <button type="button" id="btn2" > <a href="index8.html">PLAY NOW</a></a></button>
+    <element class="footer">
+        © Copyright TheGamingZone 2024 - All Right Reserved.   
+    </element>
+    
+</body>
+</html>
